@@ -36,6 +36,7 @@ footer { margin-bottom: 20px; }
  */
 ::selection { background: var(--selection-background);  color: var(--selection-text); }
 ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
+.indent { margin-left: 40px; }
 
 /**
  * Lists
