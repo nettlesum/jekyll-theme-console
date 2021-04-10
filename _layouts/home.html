@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<p><b>~$ whoami</b> Another node in a network of prison cells that we call the internet.</p>
+
+<h1>Posts:</h1>
+<br/>
+
 {{ content }}
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
 
@@ -11,6 +16,7 @@ layout: default
     <li>
       {%- assign date_format = "%Y-%m-%d" -%}
       [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      <i>{{ post.excerpt }}</i>
     </li>
     {%- endfor -%}
   </ul>
