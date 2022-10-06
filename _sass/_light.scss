@@ -3,6 +3,7 @@
  */
 
 :root {
+  --spacer: 1rem;
   --base-color: #000;
   --border: dashed 1px rgba(0, 0, 0, 1);
   --selection-background: rgba(0, 0, 0, 0.99);
@@ -11,7 +12,7 @@
   --text-color: var(--base-color);
   --placeholder-color: var(--base-color);
   --link-color: var(--base-color);
-  --color-border-default: #6b6b6b;
+  --border-color: #6b6b6b;
   --code-color-1: #aaaaaa;
   --code-color-2: #ffffcc;
   --code-color-3: #F00000;
