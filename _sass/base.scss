@@ -10,7 +10,7 @@ $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  800px !default;
-$color-border-default: #919191 !default; 
+  --spacer: 1rem;
 
 /**
  * Global
@@ -74,6 +74,13 @@ input[type=submit] { font-size: $base-font-size;  font-family: $base-font-family
 input[type=submit]:hover { color: var(--background-color); background-color: var(--base-color); }
 *:focus { outline: none; }
 textarea { vertical-align: top; }
+
+blockquote {
+  padding: 0 var(--spacer);
+  margin: 0 0 var(--spacer) 0;
+  border-left: .25em solid var(--border-color);
+  opacity: .65;
+}
 
 .markdown-body blockquote {
     padding: 0 1em;
