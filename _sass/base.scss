@@ -20,7 +20,7 @@ h1 { font-size: 16px;  margin: 0px; padding-bottom: 15px;  margin-top: 22px;  fo
 h2 { font-size: 15px;  margin: 0px; padding-bottom: 15px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 h3 { font-size: 14px;  margin: 0px; padding-bottom: 15px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
 h4, h5, h6 { font-size: 14px;  margin: 0px;  padding-bottom: 30px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
-p, ul, ol { margin: 0px;  color: var(--text-color); white-space: pre;}
+p, ul, ol { margin: 0px;  color: var(--text-color);}
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
 .markdown blockquote {  margin: 0;  padding-left: 1.4rem;  border-left: 4px solid #dadada; }
@@ -99,7 +99,6 @@ pre {
   word-wrap: normal;
   overflow: auto;
   overflow-y: hidden;
-  white-space: pre;
 }
 
 code.highlighter-rouge {
@@ -109,7 +108,6 @@ code.highlighter-rouge {
   margin: 0px -3px;
   color: #002e63;
   border-radius: 2px;
-  white-space: pre;
 }
 
 
