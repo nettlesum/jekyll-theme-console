@@ -90,10 +90,6 @@ blockquote {
  * Code and syntax highlighting
  */
 
-.highlight pre, .highlight code {
-    font-size: 12.5px !important; 
-}
-
 code.highlighter-rouge {
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -103,7 +99,7 @@ code.highlighter-rouge {
   border-radius: 2px;
 }
 
-.highlight pre { background-color: #333; font-size: 12.5px; }
+.highlight pre { background-color: #333; font-size: 12.5px !important; }
 .highlight .hll { background-color: #333333 }
 .highlight .c { color: #008800; font-style: italic; background-color: #0f140f } /* Comment */
 .highlight .err { color: #ffffff } /* Error */
