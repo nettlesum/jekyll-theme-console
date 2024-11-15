@@ -41,7 +41,7 @@ footer { margin-bottom: 20px; }
  */
 ::selection { background: var(--selection-background);  color: var(--selection-text); }
 ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
-.indent { margin-left: 5px; }
+.indent { margin-left: 0px; }
 
 /**
  * Lists
@@ -105,7 +105,6 @@ code.highlighter-rouge {
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 1px;
-  margin: 1px;
   color: #002e63;
   border-radius: 2px;
 }
