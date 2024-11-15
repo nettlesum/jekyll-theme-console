@@ -90,6 +90,24 @@ blockquote {
  * Code and syntax highlighting
  */
 
+pre {
+  background: #FFFFFF;
+  padding: 10px;
+  font-size: 12.5px;
+  color: #b5e853;
+  border-radius: 2px;
+  word-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+code.highlighter-rouge {
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+@@ -110,7 +99,7 @@ code.highlighter-rouge {
+  border-radius: 2px;
+}
+
 code.highlighter-rouge {
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
