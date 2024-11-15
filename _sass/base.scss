@@ -90,6 +90,10 @@ blockquote {
  * Code and syntax highlighting
  */
 
+.highlight pre, .highlight code {
+    font-size: 12.5px !important; 
+}
+
 code.highlighter-rouge {
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.15);
