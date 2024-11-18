@@ -90,23 +90,44 @@ blockquote {
  * Code and syntax highlighting
  */
 
+pre, code, .highlight pre {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  width: 100%; /* Take up full width of container */
+  box-sizing: border-box; /* Ensure padding/border don't affect width */
+}
+
 pre {
-  background: #FFFFFF;
-  padding: 10px;
-  font-size: 12.5px;
-  color: #b5e853;
-  border-radius: 2px;
-  word-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
+  overflow: auto; /* Ensure scrollable content if needed */
+  background-color: #333; /* Your desired background */
+}
+
+.highlight pre {
+  margin: 0 !important; /* Override any inherited margin */
+  padding: 1rem; /* Add consistent padding */
+  border: none; /* Remove any border */
 }
 
 code.highlighter-rouge {
-  background: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 1px;
-  color: #002e63;
-  border-radius: 2px;
+  display: block; /* Ensure block-level alignment */
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+blockquote pre, ul pre, ol pre {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+blockquote .highlight, ul .highlight, ol .highlight {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+pre, code {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .highlight pre { background-color: #333; font-size: 12.5px !important; }
