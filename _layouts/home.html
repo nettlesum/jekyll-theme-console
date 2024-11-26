@@ -11,7 +11,6 @@ layout: default
   <article>
     {%- assign latest_post = site.posts | first -%}
     <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title | escape }}</a></h3>
-    <p><strong>Date:</strong> {{ latest_post.date | date: "%Y-%m-%d" }}</p>
     <p>{{ latest_post.excerpt | strip_html }}</p>
     <a href="{{ latest_post.url | relative_url }}">Read more</a>
   </article>
