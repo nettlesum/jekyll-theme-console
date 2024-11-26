@@ -79,6 +79,20 @@ blockquote {
   opacity: .95;
 }
 
+
+/* Table and image highlighting */
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
 /**
  * Code and syntax highlighting
  */
