@@ -6,6 +6,19 @@ layout: default
 
 <p>I'm a technologist with over eight years of experience in operations and technical support. Currently, I delve into security and systems management to build resilient, effective solutions. This blog is my platform to share insights on cybersecurity trends, malware analysis, and system optimisation.</p>
 
+<h2>Latest Post:</h2>
+{% if site.posts.size > 0 %}
+  <article>
+    {%- assign latest_post = site.posts | first -%}
+    <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title | escape }}</a></h3>
+    <p><strong>Date:</strong> {{ latest_post.date | date: "%Y-%m-%d" }}</p>
+    <p>{{ latest_post.excerpt | strip_html }}</p>
+    <a href="{{ latest_post.url | relative_url }}">Read more</a>
+  </article>
+{% else %}
+  <p>No posts available.</p>
+{% endif %}
+
 <h1 style="padding-bottom: 0px;">Posts:</h1>
 
 {{ content }}
